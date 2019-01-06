@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
-# Get arithmetic result of 2
 import unittest
 
 
-def arithmetic(first, second, operand):
-    if str(operand) == '+':
+def arithmetic(first, second, operator):
+    if str(operator) == '+':
         summary = first + second
-    elif str(operand) == '-':
+    elif str(operator) == '-':
         summary = first - second
-    elif str(operand) == '/':
+    elif str(operator) == '/':
         summary = first / second
-    elif str(operand) == '*':
+    elif str(operator) == '*':
         summary = first * second
     else:
         summary = "Неизвестная операция"
